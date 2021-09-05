@@ -3,7 +3,7 @@ from pprint import pprint
 def make_dict(file: str) -> dict:
     result: dict = dict()
 
-    with open(file, encoding = 'cp1251') as file:
+    with open(file, encoding='cp1251') as file:
         for line in file:
             dish = line.strip()
             dish_quantity = int(file.readline())
